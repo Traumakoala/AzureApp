@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LoL Draft</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>League of Legends Draft Simulator</h1>
+
+  <div class="draft-container">
+    <div class="team blue-team">
+      <h2>Blue Team</h2>
+      <div class="picks">
+        <div class="pick-slot" data-slot="blue-1"></div>
+        <div class="pick-slot" data-slot="blue-2"></div>
+        <div class="pick-slot" data-slot="blue-3"></div>
+        <div class="pick-slot" data-slot="blue-4"></div>
+        <div class="pick-slot" data-slot="blue-5"></div>
+      </div>
+    </div>
+
+    <div class="team red-team">
+      <h2>Red Team</h2>
+      <div class="picks">
+        <div class="pick-slot" data-slot="red-1"></div>
+        <div class="pick-slot" data-slot="red-2"></div>
+        <div class="pick-slot" data-slot="red-3"></div>
+        <div class="pick-slot" data-slot="red-4"></div>
+        <div class="pick-slot" data-slot="red-5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="champSearch" placeholder="Search champions...">
+    <div class="role-filters">
+      <button data-role="all">All</button>
+      <button data-role="top">Top</button>
+      <button data-role="jungle">Jungle</button>
+      <button data-role="mid">Mid</button>
+      <button data-role="bot">Bot</button>
+      <button data-role="support">Support</button>
+    </div>
+  </div>
+
+  <div class="champion-pool" id="championPool">
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
